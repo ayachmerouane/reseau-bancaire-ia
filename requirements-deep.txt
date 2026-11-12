@@ -1,0 +1,2 @@
+# Seulement pour la partie Deep Learning (environ 500 Mo)
+tensorflow>=2.16

@@ -1,0 +1,17 @@
+# Données : jamais dans Git (7 Go)
+data/
+data_test/
+*.csv
+!requirements*.txt
+# Modèles entraînés (lourds) : partagés via Drive ou Kaggle
+modeles/
+*.joblib
+*.keras
+# Résultats régénérables, sauf le tableau commun
+resultats/*
+!resultats/resultats.csv
+# Python / Jupyter
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
