@@ -162,19 +162,7 @@ de fuite (`Timestamp`, IP), inf -> NaN, suppression des NaN, des négatifs impos
 des doublons (**avant** le split), des conflits, des colonnes constantes et identiques.
 Chaque étape est tracée dans le journal, avec les pertes par classe.
 
-## 5. Règles du binôme
 
-- Toujours travailler sur les mêmes `data\splits\` (graine 42) : les résultats restent comparables.
-- Le test n'est jamais rééquilibré ni utilisé pour régler un modèle : on règle sur la validation.
-- Chaque entraînement ajoute une ligne dans `resultats\resultats.csv` : c'est le tableau comparatif du rapport.
-- Une branche Git par tâche ; chaque pull request est relue par l'autre membre du binôme.
-
-```powershell
-git checkout -b audit-donnees
-git add src notebooks
-git commit -m "Audit : contrôles doublons et conflits"
-git push -u origin audit-donnees
-```
 
 ## Référence du jeu de données
 
